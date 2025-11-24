@@ -4,6 +4,11 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Building the application'
+                sh '''
+                docker build -t rishirathoree/react-terraform-app:latest -f dockerfiles/react.dockerfile .
+                docker login -u rishirathoree -p Rish@1234
+                docker push rishirathoree/react-terraform-app:latest
+                '''
             }
         }
         stage('Test'){
@@ -13,7 +18,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                echo 'Deploying sthe applicationsss!'
+                echo 'Deploying sthe applications!'
             }
         }
     }
