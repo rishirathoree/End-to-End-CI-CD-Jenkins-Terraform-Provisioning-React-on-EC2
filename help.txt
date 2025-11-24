@@ -39,3 +39,7 @@ admin
 
 Jenkins URL
 http://13.201.183.55:8080/
+
+git add .
+git commit -m "added changes"
+git push origin main
