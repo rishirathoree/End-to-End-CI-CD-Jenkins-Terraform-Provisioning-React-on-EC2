@@ -19,6 +19,9 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo 'Deploying sthe applications!'
+                sh '''
+                docker compose -d up
+                '''
             }
         }
     }
