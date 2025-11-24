@@ -41,5 +41,5 @@ Jenkins URL
 http://13.201.183.55:8080/
 
 git add .
-git commit -m "added changes"
+git commit -m "added changes to help"
 git push origin main
