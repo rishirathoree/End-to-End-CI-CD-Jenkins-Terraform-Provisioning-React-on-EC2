@@ -35,7 +35,7 @@ const Appnavbar: React.FC = () => {
           <Button variant="ghost" className="h-auto p-0 hover:bg-transparent">
             <Avatar>
               <AvatarImage
-                src="https://www.untitledui.com/images/avatars/noah-pierre?"
+                src="https://www.untitledui.com/images/avatars/owen-harding"
                 alt="Profile image"
               />
               <AvatarFallback>KK</AvatarFallback>
