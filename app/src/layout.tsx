@@ -4,7 +4,7 @@ import Appnavbar from '@/components/ui/app-navbar'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className='flex justify-between bg-white w-11/12 mx-auto h-screen'>
+        <div className='flex justify-between w-11/12 mx-auto h-screen'>
             <div className='w-3/12 '>
                 <DashboardSidebar />
             </div>

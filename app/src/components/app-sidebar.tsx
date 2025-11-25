@@ -169,7 +169,7 @@ export function DashboardSidebar() {
   const isCollapsed = state === "collapsed";
 
   return (
-    <Sidebar variant="inset" className="!bg-white" collapsible="none">
+    <Sidebar variant="inset" className="" collapsible="none">
       <SidebarHeader
         className={cn(
           "flex md:pt-3.5",
