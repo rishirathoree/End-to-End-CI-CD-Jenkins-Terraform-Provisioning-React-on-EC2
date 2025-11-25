@@ -1,5 +1,6 @@
 import React from 'react'
 import { DashboardSidebar } from './components/app-sidebar'
+import Appnavbar from '@/components/ui/app-navbar'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -7,7 +8,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className='w-3/12 '>
                 <DashboardSidebar />
             </div>
-            <div className='w-full overflow-hidden overflow-y-scroll scrollbar-hidden h-screen '>{children}</div>
+            <div className='w-full overflow-hidden overflow-y-scroll scrollbar-hidden h-screen '>
+                <Appnavbar />
+                {children}
+                
+                </div>
         </div>
     )
 }
