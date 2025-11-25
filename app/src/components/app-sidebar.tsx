@@ -167,7 +167,6 @@ const dashboardRoutes: Route[] = [
 export function DashboardSidebar() {
   const { state, toggleSidebar, open } = useSidebar();
   const isCollapsed = state === "collapsed";
-  console.log(open)
 
   return (
     <Sidebar variant="inset" className="!bg-white" collapsible="none">
