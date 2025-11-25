@@ -6,7 +6,7 @@ import { GitBranch, Github } from "lucide-react";
 import { useNavigate } from "react-router";
 
 export default function Login04() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
   return (
     <div className="flex items-center justify-center min-h-screen mx-auto">
       <div className="flex flex-1 flex-col justify-center px-4 py-10 lg:px-6">
