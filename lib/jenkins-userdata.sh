@@ -1,8 +1,3 @@
-Jenkins
-ssh -i mykey-jenkins ubuntu@52.66.6.102
-
-Agent
-ssh -i mykey-jenkins ubuntu@52.66.243.238 
 
 # Install JAVA
 sudo apt -y update
@@ -28,23 +23,7 @@ sudo apt -y update
 sudo apt -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl status docker
 sudo usermod -aG docker $USER
-sudo reboot
+sudo reboot 
 
 # Check Password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-
-admin
-d28490b8af3e4cbb85c0df5b871f59c0
-
-Jenkins URL
-http://52.66.6.102:8080/
-
-git add .
-git commit -m "addeds changes to helps!!"
-git push origin main
-
-http://52.66.243.238:5173
-http://52.66.6.102:5173
-
-http://52.66.243.238:80
-http://52.66.243.238:80

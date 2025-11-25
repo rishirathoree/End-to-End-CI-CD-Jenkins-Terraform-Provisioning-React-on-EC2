@@ -91,6 +91,7 @@ resource "aws_instance" "jenkins-server" {
     instance_type = "t3.small"
     subnet_id     = aws_subnet.subnet_public.id
     associate_public_ip_address = true
+    user_data = file("../../../lib/jenkins-userdata.sh")
     vpc_security_group_ids = [aws_security_group.security_group.id]
     key_name      = aws_key_pair.deployer_key.key_name
     tags = {
@@ -106,6 +107,7 @@ resource "aws_instance" "jenkins-agent" {
     associate_public_ip_address = true
     vpc_security_group_ids = [aws_security_group.security_group.id]
     key_name      = aws_key_pair.deployer_key.key_name
+    user_data = file("../../../lib/agent-userdata.sh")
     tags = {
         Name = "${var.env}-jenkins-agent"
     }
