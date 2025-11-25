@@ -7,7 +7,7 @@ pipeline{
                 echo 'Building the application'
                 sh '''
                 docker build -t rishirathoree/react-terraform-app:latest -f dockerfiles/react.dockerfile .
-                docker login -u rishirathoree -p Rish@1234
+                docker login -u rishirathoree -p Rish@123412121
                 docker push rishirathoree/react-terraform-app:latest
                 '''
             }
