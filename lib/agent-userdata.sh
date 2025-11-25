@@ -13,3 +13,12 @@ sudo apt -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 sudo systemctl status docker
 sudo usermod -aG docker $USER
 sudo reboot 
+
+
+# Allow SSH
+sudo ufw allow 22
+sudo ufw allow 8080
+sudo ufw allow 5173
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw enable
