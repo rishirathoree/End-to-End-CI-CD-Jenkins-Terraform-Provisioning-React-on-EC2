@@ -33,7 +33,7 @@ const Appnavbar: React.FC = () => {
   };
   const id = useId();
 
-  const { isDarkMode, toggle, enable, disable } = useDarkMode({
+  const { isDarkMode, toggle, } = useDarkMode({
     localStorageKey: 'demo-basic-theme',
     applyDarkClass: true
   });
